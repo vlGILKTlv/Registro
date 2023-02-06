@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1 id="title">Pagina de registro</h1>
+		<p id="description">Introduce los datos donde se te pide para llenar el registro</p>
+	</header>
+	<div>
+	<form id ="survey-form" action="#">
+		<label id="name-label"><p>Name</p><input id="name" type="text" placeholder="Enter your name" required></label>
+		<label id="email-label"><p>Email</p><input id="email" type="email" placeholder="Enter your email" required></label>
+		<label id="number-label"><p>Age</p><input id="number" type="number" placeholder="Enter your age" min="13" max="60" required></label>
+		<label id="dropdown-label">
+			<p>Nivel minimo de estudio</p>
+			<select id="dropdown">
+				<option disabled selected value=""><p>Selecciona una opcion</p></option>
+				<option>Secundaria</option>
+				<option>Preparatoria</option>
+				<option>Universidad</option>
+				<option>Ninguno</option>
+			</select>
+		</label>
+		<section class="opcion"><p>Genero</p>
+		<label class="label-radio"><input type="radio" name="option"><p class="text-radio">Hombre</p></label>
+		<label class="label-radio"><input type="radio" name="option"><p class="text-radio">Mujer</p></label>
+		</section>
+		<section class="cajas"><p>¿Con cuales de estos dispositivos cuentas?</p>
+		<label class="label-checkbox"><input type="checkbox" name="box" value="1"><p class="text-box">Celular</p></label>
+		<label class="label-checkbox"><input type="checkbox" name="box" value="2"><p class="text-box">Computadora</p></label>
+		<label class="label-checkbox"><input type="checkbox" name="box" value="3"><p class="text-box">Television</p></label>
+		<label class="label-checkbox"><input type="checkbox" name="box" value="4"><p class="text-box">Tablet</p></label>
+		<label class="label-checkbox"><input type="checkbox" name="box" value="5"><p class="text-box">Consola de videojuegos</p></label>
+		</section>
+		<section id="text-area">
+			<p>Escribe una pequeña biografia</p>
+		<textarea placeholder="Introduce your bio"></textarea>
+		</section>
+
+		<button id="submit">Submit</button>
+	</form>
+</div>
+
+</body>
+</html>
